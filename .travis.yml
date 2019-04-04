@@ -19,6 +19,7 @@ before_script:
   - git checkout -b gh-pages
   - git merge origin/master
   - git rm --cached --ignore-unmatch index.html
+  - chmod +x gradlew
 
 script:
     - ./gradlew clean build test
